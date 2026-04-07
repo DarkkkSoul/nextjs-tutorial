@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
     console.log(reqHeaders.get("Authorization"));
     const theme = req.cookies.get("theme");
     console.log(theme);
-
+ 
 
     const headersList = await headers();
     console.log("------Using headers function------")
